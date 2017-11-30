@@ -1,0 +1,150 @@
+object Form1: TForm1
+  Left = 945
+  Height = 630
+  Top = 120
+  Width = 895
+  Caption = 'Form1'
+  ClientHeight = 630
+  ClientWidth = 895
+  OnCreate = FormCreate
+  LCLVersion = '1.6.4.0'
+  object GroupBox1: TGroupBox
+    Left = 35
+    Height = 160
+    Top = 160
+    Width = 80
+    Caption = 'Licht'
+    ClientHeight = 140
+    ClientWidth = 76
+    TabOrder = 1
+    OnClick = GroupBox1Click
+    object CheckBox1: TCheckBox
+      Left = 0
+      Height = 19
+      Top = 0
+      Width = 75
+      Caption = 'Haus groß'
+      OnChange = CheckBox1Change
+      TabOrder = 0
+    end
+    object CheckBox2: TCheckBox
+      Left = 0
+      Height = 19
+      Top = 24
+      Width = 56
+      Caption = 'Haus 1'
+      OnChange = CheckBox2Change
+      TabOrder = 1
+    end
+    object CheckBox3: TCheckBox
+      Left = 0
+      Height = 19
+      Top = 48
+      Width = 56
+      Caption = 'Haus 2'
+      OnChange = CheckBox3Change
+      TabOrder = 2
+    end
+    object CheckBox4: TCheckBox
+      Left = 0
+      Height = 19
+      Top = 72
+      Width = 56
+      Caption = 'Haus 3'
+      OnChange = CheckBox4Change
+      TabOrder = 3
+    end
+    object CheckBox5: TCheckBox
+      Left = 0
+      Height = 19
+      Top = 96
+      Width = 56
+      Caption = 'Haus 4'
+      OnChange = CheckBox5Change
+      TabOrder = 4
+    end
+    object CheckBox6: TCheckBox
+      Left = 0
+      Height = 19
+      Top = 120
+      Width = 56
+      Caption = 'Haus 5'
+      OnChange = CheckBox6Change
+      TabOrder = 5
+    end
+  end
+  object Button1: TButton
+    Left = 40
+    Height = 25
+    Top = 112
+    Width = 75
+    Caption = 'Button1'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object GroupBox2: TGroupBox
+    Left = 152
+    Height = 160
+    Top = 160
+    Width = 80
+    Caption = 'Tür'
+    ClientHeight = 140
+    ClientWidth = 76
+    TabOrder = 2
+    OnClick = GroupBox2Click
+    object CheckBox7: TCheckBox
+      Left = 0
+      Height = 19
+      Top = 0
+      Width = 75
+      Caption = 'Haus groß'
+      OnChange = CheckBox7Change
+      TabOrder = 0
+    end
+    object CheckBox8: TCheckBox
+      Left = 0
+      Height = 19
+      Top = 24
+      Width = 56
+      Caption = 'Haus 1'
+      OnChange = CheckBox8Change
+      TabOrder = 1
+    end
+    object CheckBox9: TCheckBox
+      Left = 0
+      Height = 19
+      Top = 48
+      Width = 56
+      Caption = 'Haus 2'
+      OnChange = CheckBox9Change
+      TabOrder = 2
+    end
+    object CheckBox10: TCheckBox
+      Left = 0
+      Height = 19
+      Top = 72
+      Width = 56
+      Caption = 'Haus 3'
+      OnChange = CheckBox10Change
+      TabOrder = 3
+    end
+    object CheckBox11: TCheckBox
+      Left = 0
+      Height = 19
+      Top = 96
+      Width = 56
+      Caption = 'Haus 4'
+      OnChange = CheckBox11Change
+      TabOrder = 4
+    end
+    object CheckBox12: TCheckBox
+      Left = 0
+      Height = 19
+      Top = 120
+      Width = 56
+      Caption = 'Haus 5'
+      OnChange = CheckBox12Change
+      TabOrder = 5
+    end
+  end
+end

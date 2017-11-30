@@ -1,0 +1,104 @@
+unit Unit1;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls,
+  Gebaeude1;
+
+type
+
+  { TForm1 }
+
+  TForm1 = class(TForm)
+    Button1: TButton;
+    CheckBox1: TCheckBox;
+    CheckBox2: TCheckBox;
+    CheckBox3: TCheckBox;
+    CheckBox4: TCheckBox;
+    CheckBox5: TCheckBox;
+    CheckBox6: TCheckBox;
+    procedure Button1Click(Sender: TObject);
+    procedure CheckBox1Change(Sender: TObject);
+    procedure CheckBox2Change(Sender: TObject);
+    procedure CheckBox3Change(Sender: TObject);
+    procedure CheckBox4Change(Sender: TObject);
+    procedure CheckBox5Change(Sender: TObject);
+    procedure CheckBox6Change(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+  private
+      Haus1: THaus;
+      H: array[1..5] of THaus;
+  public
+    { public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+
+implementation
+
+{$R *.lfm}
+
+{ TForm1 }
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.Button1Click(Sender: TObject);
+var i: integer;
+begin
+
+
+
+     Haus1:=THaus.create(700, 600, 200, clGreen, Form1, false);
+
+     for i:= 1 to 5 do
+     begin
+
+       H[i]:=THaus.create(600-i*100,500, 50, clGreen, Form1, false);
+
+     end;
+
+
+
+
+end;
+
+procedure TForm1.CheckBox1Change(Sender: TObject);
+begin
+   Haus1.istLichtAn;
+end;
+
+procedure TForm1.CheckBox2Change(Sender: TObject);
+begin
+   H[1].istLichtAn;
+end;
+
+procedure TForm1.CheckBox3Change(Sender: TObject);
+begin
+   H[2].istLichtAn;
+end;
+
+procedure TForm1.CheckBox4Change(Sender: TObject);
+begin
+   H[3].istLichtAn;
+end;
+
+procedure TForm1.CheckBox5Change(Sender: TObject);
+begin
+   H[4].istLichtAn;
+end;
+
+procedure TForm1.CheckBox6Change(Sender: TObject);
+begin
+   H[5].istLichtAn;
+end;
+
+end.
+
